@@ -1,6 +1,7 @@
 import React from 'react';
 import MovieCard from './MovieCard';
 import MovieService from '../services/MovieService';
+import { Grid, Paper, Typography } from "@material-ui/core";
 
 
 class MovieList extends React.Component{
@@ -28,10 +29,21 @@ class MovieList extends React.Component{
 
     render() {
         return (
-            <div>
-                {
-                this.state.movies.map(movie => <MovieCard key={movie.movieId} movie={movie}/>)
-                }
+            <div style={{ marginTop: 20, padding: 30 }}>
+
+                <Grid container direction={"row"} spacing={5}>
+                    {
+                        this.state.movies.map(movie =>
+
+                            <Grid item sm={3}>
+                                <MovieCard key={movie.movieId} movie={movie} />
+                            </Grid>
+                        )
+                    }
+
+                </Grid>
+
+
             </div>
         );
     }

@@ -66,3 +66,84 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+
+
+
+
+
+
+--- steps 
+
+
+
+render() {
+        return (
+            <div style={{ marginTop: 20, padding: 30 }}>
+
+                <Grid Container direction={"row"}>
+
+                {
+                this.state.movies.map(movie =>
+                    <Grid item xs={3}>
+
+                    <MovieCard key={movie.movieId} movie={movie}/>
+
+                    </Grid>
+
+                )
+
+
+
+                }
+
+                </Grid>
+            </div>
+        );
+    }
+    
+    
+    
+    
+    
+    
+    render() {
+        return(
+                    <paper>
+                    <Card>
+                        <CardActionArea>
+
+                            {/*<CardMedia*/}
+                            {/*    component="img"*/}
+                            {/*    alt="Nannaku Prematho"*/}
+                            {/*    height="350"*/}
+                            {/*    image={`data:image/jpeg;base64,${this.props.movie.movieImage}`}*/}
+                            {/*    title="Nannaku Prematho"*/}
+                            {/*/>*/}
+
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    {this.props.movie.movieName}
+                                </Typography>
+                                <Typography component="p">{this.props.movie.movieDescription}</Typography>
+                                <Typography component="p">{this.props.movie.rating}</Typography>
+                            </CardContent>
+
+                        </CardActionArea>
+
+                        <CardActions>
+                            <Button size="small" color="default">
+                                Share
+                            </Button>
+                            <Button size="small" color="primary">
+                                Learn More
+                            </Button>
+                        </CardActions>
+
+                    </Card>
+                    </paper>
+        );
+    }
+}

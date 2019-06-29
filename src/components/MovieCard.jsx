@@ -1,34 +1,51 @@
 import React from 'react';
+import {Grid} from "@material-ui/core";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardMedia from "@material-ui/core/CardMedia";
+import CardContent from "@material-ui/core/CardContent";
+import Typography from "@material-ui/core/Typography";
+import CardActions from "@material-ui/core/CardActions";
+import Button from "@material-ui/core/Button";
 
 class MovieCard extends React.Component{
 
 
     render() {
         return(
+                    <paper>
+                    <Card>
+                        <CardActionArea onClick={this.movieclicked}>
 
-            <div>
+                            <CardMedia
+                                component="img"
+                                alt="Nannaku Prematho"
+                                height="350"
+                                image={`data:image/jpeg;base64,${this.props.movie.movieImage}`}
+                                title="Nannaku Prematho"
+                            />
 
-                 <div>
-                   <h1> {this.props.movie.movieName} </h1>
-                 </div>
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    {this.props.movie.movieName}
+                                </Typography>
+                                <Typography component="p">{this.props.movie.movieDescription}</Typography>
+                                <Typography component="p">{this.props.movie.rating}</Typography>
+                            </CardContent>
 
-                  <div>
-                      <img src={`data:image/jpeg;base64,${this.props.movie.movieImage}`} />
-                  </div>
+                        </CardActionArea>
 
-                  <div>
-                      <h2>
-                          {this.props.movie.movieDescription}
-                      </h2>
+                        <CardActions>
+                            <Button size="small" color="default">
+                                Share
+                            </Button>
+                            <Button size="small" color="primary">
+                                Learn More
+                            </Button>
+                        </CardActions>
 
-                  </div>
-
-                <div>
-                    <h2>{this.props.movie.rating}</h2>
-                </div>
-
-            </div>
-
+                    </Card>
+                    </paper>
         );
     }
 }

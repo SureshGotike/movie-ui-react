@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import TypoGraphy from '@material-ui/core/TypoGraphy';
 import NavBar from './Navbar'
 import { Home} from '@material-ui/icons'
+import {Link} from 'react-router-dom';
 
 
 export default class MovieHeader extends React.Component {
@@ -15,7 +16,8 @@ export default class MovieHeader extends React.Component {
                     <Toolbar>
                         <TypoGraphy variant="title"
                                     color="inherit">
-                            Movie Dash Board <Home/>
+                            Movie Dash Board
+                            <Link to={"/"}><Home/></Link>
                         </TypoGraphy>
                     </Toolbar>
                     <NavBar/>

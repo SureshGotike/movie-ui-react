@@ -25,6 +25,7 @@ class MovieList extends React.Component{
             )
 
         );
+
     }
 
     render() {

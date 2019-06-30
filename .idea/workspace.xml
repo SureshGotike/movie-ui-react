@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a41a073c-ca68-43e6-b9c5-15aed5d2ad5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/MovieService.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/MovieService.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/movies.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/movies.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -82,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/services/movies.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+            <state relative-caret-position="315">
+              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -147,7 +139,11 @@
       <find>PUBLIC_URL</find>
       <find>roboto</find>
       <find>align</find>
+      <find>data:image/jpeg;base64,</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -265,19 +261,19 @@
       <option name="presentableId" value="Default" />
       <updated>1561734835307</updated>
       <workItem from="1561734838767" duration="6609000" />
-      <workItem from="1561764483768" duration="50151000" />
+      <workItem from="1561764483768" duration="50895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57987000" />
+    <option name="totallyTimeSpent" value="58731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="23" width="1680" height="960" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24894515" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24894515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -289,7 +285,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4343318" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4343318" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -491,8 +487,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/movies.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+        <state relative-caret-position="315">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
     </entry>

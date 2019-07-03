@@ -1,7 +1,7 @@
 import React from 'react';
 import MovieCard from './MovieCard';
 import MovieService from '../services/MovieService';
-import { Grid, Paper, Typography } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
 
 class MovieList extends React.Component{

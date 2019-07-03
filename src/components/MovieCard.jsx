@@ -1,5 +1,4 @@
 import React from 'react';
-import {Grid} from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -7,9 +6,8 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
-import MovieCardView from './MovieCardView';
 
-import {Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class MovieCard extends React.Component{

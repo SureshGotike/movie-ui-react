@@ -1,0 +1,19 @@
+---
+applications:
+  - name: movieuireact
+#    host: movieui
+#    path: ./dist/libs/movieservice-0.0.1-SNAPSHOT.jar
+    instances: 1
+    buildpacks:
+     - https://github.com/cloudfoundry/nodejs-buildpack
+    command: npm start
+#    routes:
+#      - route: movieui.sg.com
+
+
+
+
+#    env:
+#      SPRING_PROFILES_ACTIVE: cloud,dev
+
+##cf push manifest_dev.yml

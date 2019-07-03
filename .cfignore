@@ -1,0 +1,8 @@
+.build/*
+node_modules/*
+Packages/*
+.travis.yml
+docker-compose.yml
+Dockerfile
+.idea/*
+*.xcodeproj/

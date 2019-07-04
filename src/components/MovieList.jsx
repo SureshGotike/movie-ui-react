@@ -2,8 +2,11 @@ import React from 'react';
 import MovieCard from './MovieCard';
 import MovieService from '../services/MovieService';
 import { Grid } from "@material-ui/core";
+import API from '../services/api.js';
 
+const baseurl = 'https://movieservice.cfapps.io/movies/';
 
+const url = baseurl+'/getMovieDocs';
 class MovieList extends React.Component{
 
     constructor(){
@@ -16,15 +19,31 @@ class MovieList extends React.Component{
 
     componentDidMount() {
 
-        this.setState(
-            () =>(
-
+        API.get('/getMovieDocs',{
+            method: 'GET',
+                mode: 'no-cors',
+                headers: {
+                'Access-Control-Allow-Origin': 'https://movieservice.cfapps.io',
+                    'Content-Type': 'application/json',
+            },
+        }).then((res)=>{
+            this.setState(
                 {
-                    movies: MovieService.getMovies()
+                    movies: res.data
                 }
-            )
+            );
+        });
 
-        );
+
+        // this.setState(
+        //     () =>(
+        //
+        //         {
+        //             movies: MovieService.getMovies()
+        //         }
+        //     )
+        //
+        // );
 
     }
 

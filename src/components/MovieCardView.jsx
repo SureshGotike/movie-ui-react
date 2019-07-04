@@ -11,6 +11,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import { Mood} from '@material-ui/icons';
 import {MoodBad} from "@material-ui/icons";
 import {Star} from "@material-ui/icons";
+import API from "../services/api";
 
 
 const styles = muiBaseTheme =>({
@@ -87,15 +88,30 @@ class MovieCardView extends React.Component{
     componentDidMount() {
         console.log("id value is "+ this.props.id);
 
-        this.setState(
-            () =>(
-
+        API.get('/getMovie/'+this.props.id,{
+            method: 'GET',
+            mode: 'no-cors',
+            headers: {
+                'Access-Control-Allow-Origin': 'https://movieservice.cfapps.io',
+                'Content-Type': 'application/json',
+            },
+        }).then((res)=>{
+            this.setState(
                 {
-                    movie: MovieService.getMovieById(this.props.id)
+                    movie: res.data
                 }
-            )
+            );
+        });
 
-        );
+        // this.setState(
+        //     () =>(
+        //
+        //         {
+        //             movie: MovieService.getMovieById(this.props.id)
+        //         }
+        //     )
+        //
+        // );
     }
 
 

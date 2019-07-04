@@ -1,11 +1,47 @@
 import movies from './movies.json';
+import API from '../services/api.js';
+import axios from 'axios';
+const baseurl = 'https://movieservice.cfapps.io/movies/';
 
 export default class MovieService{
 
 
-    static getMovies(){
+    static async getMovies(){
 
-        return movies ? movies : [];
+        // if(process.env.ISAPIENABLED == "Y"){
+            console.log("entered getAllmovies");
+            const url = baseurl+'/getMovieDocs/';
+
+            var response = await axios.get(url,{
+                method: 'GET',
+                mode: 'no-cors',
+                headers: {
+                    'Access-Control-Allow-Origin': 'https://movieservice.cfapps.io',
+                    'Content-Type': 'application/json',
+                },
+                // withCredentials: true,
+                // credentials: 'same-origin',
+            });
+
+        var movies = response.data;
+                // .then(res => {
+                //     console.log("data is "+ res.data);
+                //         movies = res.data;
+                //         return movies;
+                //     },err =>{console.log("movielist error "+err)}
+                //
+                //     );
+
+            return movies;
+
+        // API.get('getMovieDocs')
+            //     .then(res => {
+            //         console.log("exited getAllmovies");
+            //         return res.data ? res.data: [];
+            //     })
+        // }
+
+        // return movies ? movies : [];
     }
 
     static getMovieById(id){

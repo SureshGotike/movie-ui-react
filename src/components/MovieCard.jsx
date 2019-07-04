@@ -41,10 +41,10 @@ class MovieCard extends React.Component{
 
                         <CardMedia
                             component="img"
-                            alt="Nannaku Prematho"
+                            alt="image missed"
                             height="350"
                             image={`data:image/jpeg;base64,${this.props.movie.movieImage}`}
-                            title="Nannaku Prematho"
+                            title="Movie Image"
                         />
 
                         <CardContent>
